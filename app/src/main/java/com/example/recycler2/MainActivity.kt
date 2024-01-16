@@ -9,8 +9,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bind : ActivityMainBinding
     private lateinit var adaptadorficha : AdaptadorFicha
     override fun onCreate(savedInstanceState: Bundle?) {
+        bind = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(bind.root)
 
         var data = mutableListOf(
             Ficha("Rey",getDrawable(R.drawable.rey)!!),

@@ -17,11 +17,13 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="20dp"/>
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scroll"
         app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         >
 
         <LinearLayout
@@ -41,7 +43,7 @@
 
         </LinearLayout>
 
-    </HorizontalScrollView>
+    </ScrollView>
 
 
 
